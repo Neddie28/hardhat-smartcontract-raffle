@@ -43,6 +43,7 @@ developmentChains.includes(network.name)
                           }
                       })
                       //Then enter the raffle
+                      
                       await raffle.enterRaffle({ value: raffleEntranceFee })
                       const winnerStartingBalance = await accounts[0].getBalance()
                   })
