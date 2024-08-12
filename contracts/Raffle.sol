@@ -116,9 +116,11 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
                 uint256(s_raffleState)
             );
         }
+
         //we have to request the random number
         //once we get it, do something with it
         // 2 transaction process
+
         s_raffleState = RaffleState.CALCULATING;
         uint256 requestId = i_vrfCoordinator.requestRandomWords(
             i_gasLane,
