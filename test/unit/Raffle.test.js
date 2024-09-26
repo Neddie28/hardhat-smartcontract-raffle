@@ -45,7 +45,7 @@ const { developmentChains, networkConfig } = require("../../helper-hardhat-confi
                   )
               })
               //   if (s_raffleState != RaffleState.OPEN) {
-              //    revert Raffle__NotOpen(); }
+              //     revert Raffle__NotOpen(); }
               
               it("it doesnt allow entrance when raffle is calculating", async () => {
                   await raffle.entranceRaffle({ value: raffleEntranceFee })
